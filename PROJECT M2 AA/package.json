@@ -1,0 +1,11 @@
+{
+  "name": "project-m2-aa",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "main": "i",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rajesh Kumar",
+  "license": "ISC"
+}
