@@ -1,0 +1,30 @@
+[   {
+    "id": "1",
+    "coursename": "Middleware",
+    "from": "Information Technology",
+    "instructor": "Tatiana Walsh",
+    "credits": "3",
+    "description": "welcome to the Middleware course"
+  },
+  {
+    "id": "2",
+    "coursename": "IOT",
+    "from": "Information Technology",
+    "instructor": "Beckam",
+    "credits": "3",
+    "description": "welcome to the IOT course"
+    
+  }
+  ,
+  {
+    "id": "3",
+    "coursename": "Big data",
+    "from": "Information Technology",
+    "instructor": "Rucker",
+    "credits": "3",
+    "description": "welcome to big data course"
+    
+  }
+]
+  
+  
