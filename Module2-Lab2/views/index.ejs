@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Information Form</title>
+</head>
+ <body>
+<!-- This is the form for the user to input their date -->
+<!-- when the form is submitted, it sends a POST request to the server at the specified a -->
+ <form action="/AddDataforStudents" method="POST">
+     <label for="firstName">First Name:</label><br>
+     <input type="text" id="firstName" name="firstName"><br>
+     <label for="widdleName">Middle Name:</label><br>
+      <input type="text" id="middleName" name="middleName"><br>
+      <label for="lastName">Last Name:</label><br> 
+     <input type="text" id="lastName" name="lastName"><br>
+     <label for="address"> Address: </label><br>
+     <input type="text" id="address" name="address"><br>
+
+     <label for="phone">Phone:</label><br>
+     <input type="tel" id="phone" name="phone"><br>
+      <label for="email">Email:</label><br>
+     <input type="email" id="email" name="email"><br>
+     <label for="description">Description:</label><br>
+     <textarea id="description" name="description"></textarea><br>
+      <input type="submit" value="submit">
+
+</form>
+
+<!-- This is where we'll display the submitted student data -->
+
+<!-- E35 Allows us to use Javascript in our HTML. Here, we loop over the students' array and -->
+<ul>
+      <% students.forEach(function(student) { %>
+            <li>
+                <h2><%= student.firstName %><%=student.middleName %><%=student.lastName %></h2>
+                <p>Address: <%=student.address %></p>
+                <p>Phone: <%=student.phone %></p>
+                <p>Email: <%=student.email %></p>
+                <p>Description: <%=student.description %></p>
+          
+            </li>
+            <% }); %>
+</ul>
+<a href="/">Add New Student</a>
+</body>
+</html>
+ 
