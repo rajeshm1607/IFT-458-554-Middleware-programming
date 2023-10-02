@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "c74e141e-0098-4a43-ac2a-4c23d2bc6aac",
+		"name": "M4A2_RajeshKumar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29286602"
+	},
+	"item": [
+		{
+			"name": "CustomerLoans",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9",
+						"disabled": true
+					},
+					{
+						"key": "Cache-Control",
+						"value": "max-age=0",
+						"disabled": true
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:3000",
+						"disabled": true
+					},
+					{
+						"key": "Referer",
+						"value": "http://localhost:3000/login",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1",
+						"disabled": true
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"Google Chrome\";v=\"116\"",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0",
+						"disabled": true
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\"",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"loans"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
