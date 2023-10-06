@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List of Students</title>
+</head>
+<body>
+  <%- include('navbar') %>
+  <h1>List of Students</h1>
+  <ul>
+    <% students.forEach(function(student) { %>
+      <li><a href="/students/<%= student.id %>"><%= student.name %></a></li>
+    <% }); %>
+  </ul>
+  <a href="/students/new">Create New Student</a>
+</body>
+</html>
