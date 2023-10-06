@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "4f2a39c3-a7c7-4539-9a32-80c5c8163c15",
+		"name": "students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29779705"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
