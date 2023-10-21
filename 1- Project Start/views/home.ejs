@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Exchange Platform</title>
+    <style>
+        /* Add some basic styles for readability */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .book {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="currentDateTime"></div>
+
+    <script>
+        const dateTimeElement = document.getElementById('currentDateTime');
+        const currentDateTime = new Date().toLocaleString();
+        dateTimeElement.textContent = currentDateTime;
+    </script>
+    <header>
+        <h1>Welcome to Book Exchange!</h1>
+        
+        <nav>
+            <% if (user) { %>
+                <a href="<%= api_version %>/views/logoutUser">Logout</a>
+            <% } else { %>
+                <a href="<%= api_version %>/views/registerUser">Register</a>
+                <a href="<%= api_version %>/views/loginUser">Login</a>
+            <% } %>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Available Books:</h2>
+        <% if (books && books.length > 0) { %>
+            <% books.forEach(function(book) { %>
+                <div class="book">
+                    <h3><%= book.title %></h3>
+                    <p>Author: <%= book.author %></p>
+                    <p>Genre: <%= book.genre %></p>
+                    <p>Description: <%= book.description %></p>
+                    <% if (user) { %>
+                        <button><a href="/request-exchange/<%= book._id %>">Request Exchange</a></button>
+                    <% } %>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No books available for exchange at the moment.</p>
+        <% } %>
+    </section>
+
+    <footer>
+        <p>Book Exchange Platform &copy; 2023</p>
+    </footer>
+</body>
+</html>

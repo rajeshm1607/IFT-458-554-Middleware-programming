@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center; /* Center the content */
+        }
+        .success-box {
+            border: 2px solid green;
+            padding: 20px;
+            background-color: #e6ffee; /* Light green background */
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="currentDateTime"></div>
+
+    <script>
+        const dateTimeElement = document.getElementById('currentDateTime');
+        const currentDateTime = new Date().toLocaleString();
+        dateTimeElement.textContent = currentDateTime;
+    </script>
+
+<div class="success-box">
+    <h2>Authorization Successful!</h2>
+    
+    <div class="success-box">
+        <div>
+            <p>Welcome, <%= user.name %>!</p> <!-- Display the user's name -->
+            <p><%= user.email %>!</p> <!-- Display the user's name -->
+         </div>
+        <div>
+            <p>Token, <%= token %>!</p> <!-- Display the user's token but must be removed in prod -->
+            <p>You can now access the platform's features.</p>
+        </div>
+    </div>
+    <div>
+        <strong>
+            <a href="<%= api_version %>/views">Go to home</a>
+        </strong>
+    </div>
+    
+</div>
+
+</body>
+</html>

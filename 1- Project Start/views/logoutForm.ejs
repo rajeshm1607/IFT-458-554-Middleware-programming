@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logout</title>
+</head>
+<body>
+    <div id="currentDateTime"></div>
+
+    <script>
+        const dateTimeElement = document.getElementById('currentDateTime');
+        const currentDateTime = new Date().toLocaleString();
+        dateTimeElement.textContent = currentDateTime;
+    </script>
+    <h2>Are you sure you want to logout?</h2>
+    <form action="=<% api_version %>/users/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+    <p>Want to stay? <a href="/">Go back</a></p>
+</body>
+</html>

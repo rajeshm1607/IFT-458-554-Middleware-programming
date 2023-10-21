@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div id="currentDateTime"></div>
+
+    <script>
+        const dateTimeElement = document.getElementById('currentDateTime');
+        const currentDateTime = new Date().toLocaleString();
+        dateTimeElement.textContent = currentDateTime;
+    </script>
+    <h2>Login</h2>
+    <form action="<%= api_version %>/users/login" method="post">
+        <div>
+            <label for="email">email:</label>
+            <input type="text" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <p>Don't have an account? <a href="<%= api_version %>/views/registerUser">Sign-up</a></p>
+</body>
+</html>
