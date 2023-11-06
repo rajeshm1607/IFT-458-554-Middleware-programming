@@ -1,0 +1,23 @@
+#####To retrieve a list of all books
+GET http://localhost:4000/api/v1/books
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+
+
+#####To get a book with a specific ID
+GET http://localhost:4000/api/v1/books/6548331f34c958e92294d4d5
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+
+#####To create a new book
+
+POST http://localhost:4000/api/v1/books/ HTTP/1.1
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+    
+{
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": "Fantasy",
+    "price": 1997,
+    "Owner": "User",
+    "description": "This book was published in 1997"
+}

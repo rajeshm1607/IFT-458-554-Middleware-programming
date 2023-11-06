@@ -1,0 +1,24 @@
+POST http://localhost:4000/api/v1/books
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+
+
+
+{ 
+    "title": "Programming with C",
+    "author": "James Richi",
+    "description": "This book was published in 2013",
+    "genre": "Coding",
+    "year": 2013
+}
+
+#####To get a book with a specific ID
+GET http://localhost:4000/api/v1/books/6548377934c958e92294d4f1
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+
+
+#####To retrieve a list of all books
+GET http://localhost:4000/api/v1/books
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1M2Q3OTM3MDliYjZjZmFhYjg2ZDc1ZSIsImlhdCI6MTY5OTIzMDMxOSwiZXhwIjoxNzAwMDk0MzE5fQ.kyAXlk18qs0earRC1S7wAaa__n6MsJ_MGwdWXlhJXC0
+
+
