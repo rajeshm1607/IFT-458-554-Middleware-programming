@@ -1,0 +1,31 @@
+### Sample Test: Add a new book
+POST http://localhost:4000/books/
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFjMzhkYzQ0ZTc1NzY5NjhhMDQzOSIsImlhdCI6MTcwMDQ1MDE0NCwiZXhwIjoxNzAxMzE0MTQ0fQ.CnYXkxp2MJiP_0T_aIlB9oac7kcbUoXvQfsuozXyles
+
+{ "title": "programming in c part 5", 
+"author": "richy", 
+"description": "Programming  book part 5", 
+"exchangeType": "borrow", 
+"owner": "655ac38dc44e7576968a0439", 
+"status": "available" }
+
+### Sample Test: update a new book
+Put http://localhost:4000/books/655ad29f512e9f4650654b32
+Content-Type: application/json
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFjMzhkYzQ0ZTc1NzY5NjhhMDQzOSIsImlhdCI6MTcwMDQ1MDE0NCwiZXhwIjoxNzAxMzE0MTQ0fQ.CnYXkxp2MJiP_0T_aIlB9oac7kcbUoXvQfsuozXyles
+
+{ "title": "programming in c part 5", 
+"description": "Programming  book part 5 updated"
+ }
+
+
+
+#####  Delete a book with a specific ID
+DELETE http://localhost:4000/books/655ad233512e9f4650654b28
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFjMzhkYzQ0ZTc1NzY5NjhhMDQzOSIsImlhdCI6MTcwMDQ1MDE0NCwiZXhwIjoxNzAxMzE0MTQ0fQ.CnYXkxp2MJiP_0T_aIlB9oac7kcbUoXvQfsuozXyles
+
+#####To retrieve a list of all books
+GET http://localhost:4000/books/
+Cookie: jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWFjMzhkYzQ0ZTc1NzY5NjhhMDQzOSIsImlhdCI6MTcwMDQ1MDE0NCwiZXhwIjoxNzAxMzE0MTQ0fQ.CnYXkxp2MJiP_0T_aIlB9oac7kcbUoXvQfsuozXyles
+
